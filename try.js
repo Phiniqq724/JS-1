@@ -26,7 +26,7 @@ document.title = "Arsadam bareng Naufal"
 
 const body = document.body
 
-body.append("Hello World")
+body.append("Hello World");
 
 const heading1 = document.createElement('<marquee>h1</marquee>')
 
