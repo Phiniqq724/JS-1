@@ -155,3 +155,50 @@ datas
 .sort((a, b) => a.age - b.age)
 .filter((x) => x.age >=20)
 .map((value) => console.log(value))
+
+// Cara normal Function 
+function normalFun(){
+    console.log(arguments[0])
+    console.log(arguments[1])
+}
+
+normalFun("Pikek", "Fahrell")
+
+// Cara aga aneh function
+
+const newFun = function notNormalFun(namaAwal, namaAkhir) {
+    console.log(namaAwal, namaAkhir)
+}
+
+newFun("Pikek", "Fahrell")
+
+const newestFun = new Function("x","y","console.log(x,y)")
+
+newestFun(1,2)
+
+// Cara makin ga normal
+
+const newbieFun = (x,y) => {
+    console.log(x+y)
+}
+
+newbieFun(5,3)
+
+function luasLingkaran(r) {
+    return Math.PI*r*r
+}
+
+const luasSegitiga = (a, t) => {
+    return 1/2 * a *t
+}
+
+const persegiPanjang = new Function("p", "l", "return p * l")
+
+const jajarGenjang = function berjajarGenjang(a, t) {
+    return a*t
+}
+
+console.log(luasLingkaran(7))
+console.log(luasSegitiga(2,6))
+console.log(persegiPanjang(5, 4))
+console.log(jajarGenjang(5, 4))
