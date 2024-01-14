@@ -202,3 +202,29 @@ console.log(luasLingkaran(7))
 console.log(luasSegitiga(2,6))
 console.log(persegiPanjang(5, 4))
 console.log(jajarGenjang(5, 4))
+
+function gajiBulan(namaKaryawan, gajiPerhari, jumlahHariGaMasukKerja) {
+    console.log("Nama Karyawan:", namaKaryawan)
+    let masukSebulan = 30 - jumlahHariGaMasukKerja
+    console.log("Masuk Kerja Sebulan:", masukSebulan)
+    console.log("Gaji perBulan:", gajiPerhari*masukSebulan)
+}
+
+gajiBulan("Fahrell Sandy", 5000, 8)
+
+const uangDompet = [2000, 5000, 10000, 50000, 100000]
+
+// For of
+for(let dompet of uangDompet) {
+    console.log(dompet)
+}
+
+// For in (keluarin index dari array)
+for(let dompet in uangDompet) {
+    console.log(dompet)
+}
+
+// for each (ya begitulah)
+uangDompet.forEach((dompet, index) => {
+    console.log(dompet, index + 1)
+});
